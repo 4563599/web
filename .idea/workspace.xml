@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0102cbd-98c8-4fef-b9e0-17e4816074a0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/config/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/mybatis/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/spring/spring-context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/spring/springmvc-context.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/crowdfunding-parent/target/" />
     <ignored path="$PROJECT_DIR$/crowding-manager/target/" />
@@ -55,26 +58,8 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crowding-manager/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-bean/pom.xml">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-impl/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="35" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="35" />
-            </state>
-          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -104,13 +89,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2052">
-              <caret line="108" column="24" selection-start-line="108" selection-start-column="24" selection-end-line="108" selection-end-column="24" />
+            <state relative-caret-position="133">
+              <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/spring/spring-context.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-114">
+              <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/config/jdbc.properties">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -147,6 +146,7 @@
         <option value="$PROJECT_DIR$/crowdfunding-parent/pom.xml" />
         <option value="$PROJECT_DIR$/crowding-manager/crowding-manager-main/pom.xml" />
         <option value="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/spring/spring-context.xml" />
       </list>
     </option>
   </component>
@@ -239,8 +239,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="170" />
-    <option name="y" value="116" />
+    <option name="x" value="286" />
+    <option name="y" value="86" />
     <option name="width" value="1667" />
     <option name="height" value="1000" />
   </component>
@@ -304,6 +304,32 @@
               <item name="crowding-manager-main" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crowding-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="crowding-manager-main" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crowding-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="crowding-manager-main" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crowding-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="crowding-manager-main" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -336,7 +362,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555147764101" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555147944166" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/crowding-manager" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -344,6 +370,11 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\web\crowdfunding\crowding-manager\crowding-manager-main\src\main\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -396,7 +427,7 @@
       <option name="presentableId" value="Default" />
       <updated>1555143011224</updated>
       <workItem from="1555143013444" duration="3523000" />
-      <workItem from="1555146612855" duration="1017000" />
+      <workItem from="1555146612855" duration="1331000" />
     </task>
     <task id="LOCAL-00001" summary="init web">
       <created>1555144528996</created>
@@ -454,14 +485,21 @@
       <option name="project" value="LOCAL" />
       <updated>1555147429334</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="配置web.xml">
+      <created>1555147798382</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1555147798382</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4540000" />
+    <option name="totallyTimeSpent" value="4854000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="517" y="98" width="1667" height="1000" extended-state="0" />
+    <frame x="286" y="86" width="1667" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29620412" />
@@ -508,7 +546,8 @@
     <MESSAGE value="init manager" />
     <MESSAGE value="init main" />
     <MESSAGE value="修改servlent api 版本号" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改servlent api 版本号" />
+    <MESSAGE value="配置web.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置web.xml" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -579,8 +618,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2052">
-          <caret line="108" column="24" selection-start-line="108" selection-start-column="24" selection-end-line="108" selection-end-column="24" />
+        <state relative-caret-position="133">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/config/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/spring/spring-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
         </state>
       </provider>
     </entry>
