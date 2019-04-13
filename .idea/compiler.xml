@@ -6,17 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="crowdfunding-manager-api" />
+        <module name="crowding-manager-api" />
         <module name="crowding-manager-bean" />
         <module name="crowding-manager-impl" />
+        <module name="crowding-manager-main" />
+        <module name="crowding-potal-api" />
+        <module name="crowding-potal-impl" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="crowdfunding-manager-api" target="1.7" />
       <module name="crowdfunding-parent" target="1.7" />
       <module name="crowding-manager" target="1.7" />
+      <module name="crowding-manager-api" target="1.7" />
       <module name="crowding-manager-bean" target="1.7" />
       <module name="crowding-manager-impl" target="1.7" />
+      <module name="crowding-manager-main" target="1.7" />
+      <module name="crowding-potal-api" target="1.7" />
+      <module name="crowding-potal-impl" target="1.7" />
+      <module name="crowing-manager-api" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

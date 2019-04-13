@@ -19,6 +19,8 @@
         <module>crowding-manager-impl</module>
         <module>crowding-potal-impl</module>
         <module>crowding-potal-api</module>
+        <module>crowding-manager-main</module>
+        <module>crowding-manager-api</module>
     </modules>
 
 

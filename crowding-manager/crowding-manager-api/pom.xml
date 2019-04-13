@@ -9,9 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>crowding-potal-api</artifactId>
+    <artifactId>crowding-manager-api</artifactId>
 
-    <name>crowding-potal-api</name>
+    <name>crowding-manager-api</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
