@@ -14,7 +14,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>crowding-manager-bean</module>
-        <module>crowdfunding-manager-api</module>
+        <module>crowding-manager-api</module>
         <module>crowding-manager-impl</module>
         <module>crowding-manager-impl</module>
         <module>crowding-potal-impl</module>
