@@ -19,9 +19,17 @@
           <element id="archive" name="crowding-manager-impl-1.0-SNAPSHOT.jar">
             <element id="module-output" name="crowding-manager-impl" />
           </element>
+          <element id="archive" name="crowd-common-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="crowd-common" />
+          </element>
+          <element id="archive" name="crowding-manager-bean-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="crowding-manager-bean" />
+          </element>
           <element id="library" level="project" name="Maven: cn.lyy:crowdfunding-manager-api:1.0-SNAPSHOT" />
+          <element id="archive" name="crowding-manager-api-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="crowding-manager-api" />
+          </element>
           <element id="library" level="project" name="Maven: cn.lyy:crowdfunding-common:1.0-SNAPSHOT" />
-          <element id="library" level="project" name="Maven: cn.lyy:crowdfunding-bean:1.0" />
           <element id="archive" name="crowding-potal-impl-1.0-SNAPSHOT.jar">
             <element id="module-output" name="crowding-potal-impl" />
           </element>

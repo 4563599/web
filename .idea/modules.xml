@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/crowdfunding-common/crowdfunding-common.iml" filepath="$PROJECT_DIR$/crowdfunding-common/crowdfunding-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowding-manager/crowd-common/crowd-common.iml" filepath="$PROJECT_DIR$/crowding-manager/crowd-common/crowd-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowding-manager/crowdfunding-common/crowdfunding-commonte.iml" filepath="$PROJECT_DIR$/crowding-manager/crowdfunding-common/crowdfunding-commonte.iml" />
       <module fileurl="file://$PROJECT_DIR$/crowdfunding-parent/crowdfunding-parent.iml" filepath="$PROJECT_DIR$/crowdfunding-parent/crowdfunding-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/crowding-manager/crowding-manager.iml" filepath="$PROJECT_DIR$/crowding-manager/crowding-manager.iml" />
       <module fileurl="file://$PROJECT_DIR$/crowding-manager/crowding-manager-api/crowding-manager-api.iml" filepath="$PROJECT_DIR$/crowding-manager/crowding-manager-api/crowding-manager-api.iml" />

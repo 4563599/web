@@ -7,16 +7,12 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/crowdfunding-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/crowdfunding-common/pom.xml" />
+        <option value="$PROJECT_DIR$/crowding-manager/pom.xml" />
       </list>
     </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/crowding-manager/crowding-manager-api/pom.xml" />
-        <option value="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/pom.xml" />
-      </set>
-    </option>
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
