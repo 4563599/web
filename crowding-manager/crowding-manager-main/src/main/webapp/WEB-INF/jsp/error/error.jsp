@@ -9,8 +9,11 @@
 <html>
 <head>
     <title>error</title>
+    <%--<link href="css/bootstrap.mi.css" rel="stylesheet">--%>
 </head>
 <body>
 error
 </body>
+<%--<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>--%>
+<%--<script src="js/bootstrap.min.js"></script>--%>
 </html>

@@ -2,62 +2,151 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="crowding-manager-main:war exploded" />
+      <artifact name="crowding" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0102cbd-98c8-4fef-b9e0-17e4816074a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/crowding_manager_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_el_el_api_2_1_2_b05.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1_3_b06.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_javax_servlet_3_0_b70.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crowding-manager/crowd-common/crowd-common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crowding-manager/crowd-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-api/src/main/java/cn/lyy/crowdfunding/manager/dao/TestDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-api/src/main/java/cn/lyy/crowdfunding/manager/service/TestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/src/main/java/cn/lyy/crowdfunding/manager/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/src/main/java/cn/lyy/crowdfunding/manager/service/impl/TestServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/src/main/resources/mybatis/mapper-user.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/java/cn/lyy/crowdfunding/aa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/WEB-INF/jsp/error/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-potal-impl/src/main/resources/mybatis/mapper-user.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crowding-manager/web/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crowding-manager/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crowding-manager/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/crowding_manager_main_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/crowding_manager_main_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cn_lyy_crowdfunding_bean_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cn_lyy_crowding_manager_impl_1_0_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/java/cn/lyy/crowdfunding/listener/StartSystemListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/bootstrap/css/bootstrap-theme(1).css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/bootstrap/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/css/carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/css/doc.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/css/main(1).css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/css/theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/fonts/fontawesome4.2/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/fonts/fontawesome4.2/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/fonts/fontawesome4.2/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/fonts/fontawesome4.2/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/fonts/fontawesome4.2/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/img/carousel-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/img/carousel-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/img/carousel-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/img/p1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/img/p2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/img/p3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/img/p3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/img/pic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/img/product-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/img/product-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/img/product-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/img/product-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/img/product-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/img/product-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/img/product-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/img/product-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/img/product-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/img/product_detail_body.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/img/product_detail_head.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/img/services-box1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/img/services-box2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/img/services-box3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/img/services-box4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/jquery/jquery-2.1.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/script/back-to-top.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/script/docs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/script/echarts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/ztree/img/diy/1_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/ztree/img/diy/1_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/ztree/img/diy/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/ztree/img/diy/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/ztree/img/diy/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/ztree/img/diy/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/ztree/img/diy/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/ztree/img/diy/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/ztree/img/diy/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/ztree/img/diy/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/ztree/img/line_conn.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/ztree/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/ztree/img/zTreeStandard.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/ztree/img/zTreeStandard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/ztree/jquery.ztree.all-3.5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/ztree/zTreeStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/crowding_manager_main_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/crowding_manager_main_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/crowding.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/crowding_manager_war_exploded.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowdfunding-common/crowdfunding-common.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowdfunding-common/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowdfunding-parent/crowdfunding-parent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding-parent/crowdfunding-parent.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowdfunding-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding-parent/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-api/crowding-manager-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-api/crowding-manager-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-bean/crowding-manager-bean.iml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-bean/crowding-manager-bean.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-bean/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-bean/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-bean/src/main/java/cn/lyy/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/crowding-manager-impl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/crowding-manager-impl.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/crowding-manager-main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/crowding-manager-main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/config/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/config/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/mybatis/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/mybatis/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/spring/spring-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/spring/spring-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowd-common/target/crowd-common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowd-common/target/crowd-common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowd-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowd-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowd-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowd-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowd-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowd-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowd-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowd-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowd-common/target/surefire-reports/TEST-cn.lyy.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowd-common/target/surefire-reports/TEST-cn.lyy.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowd-common/target/surefire-reports/cn.lyy.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowd-common/target/surefire-reports/cn.lyy.AppTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-api/target/crowding-manager-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-api/target/crowding-manager-api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-api/target/surefire-reports/TEST-cn.lyy.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-api/target/surefire-reports/TEST-cn.lyy.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-api/target/surefire-reports/cn.lyy.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-api/target/surefire-reports/cn.lyy.AppTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-bean/target/crowding-manager-bean-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-bean/target/crowding-manager-bean-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-bean/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-bean/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-bean/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-bean/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-bean/target/surefire-reports/TEST-cn.lyy.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-bean/target/surefire-reports/TEST-cn.lyy.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-bean/target/surefire-reports/cn.lyy.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-bean/target/surefire-reports/cn.lyy.AppTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/target/crowding-manager-impl-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/target/crowding-manager-impl-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/target/surefire-reports/TEST-cn.lyy.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/target/surefire-reports/TEST-cn.lyy.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/target/surefire-reports/cn.lyy.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/target/surefire-reports/cn.lyy.AppTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/java/cn/lyy/crowdfunding/aa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/WEB-INF/jsp/error/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/WEB-INF/jsp/error/error.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-potal-api/crowding-potal-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-potal-api/crowding-potal-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-potal-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-potal-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-potal-impl/crowding-potal-impl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-potal-impl/crowding-potal-impl.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-potal-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-potal-impl/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/target/classes/cn/lyy/crowdfunding/aa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/target/crowding-manager-main.war" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/target/crowding-manager-main.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/target/crowding-manager-main/WEB-INF/classes/cn/lyy/crowdfunding/aa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/target/crowding-manager-main/WEB-INF/jsp/error/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/target/crowding-manager-main/WEB-INF/jsp/error/error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/target/crowding-manager-main/WEB-INF/lib/crowd-common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/target/crowding-manager-main/WEB-INF/lib/crowd-common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/target/crowding-manager-main/WEB-INF/lib/crowding-manager-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/target/crowding-manager-main/WEB-INF/lib/crowding-manager-api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/target/crowding-manager-main/WEB-INF/lib/crowding-manager-bean-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/target/crowding-manager-main/WEB-INF/lib/crowding-manager-bean-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/target/crowding-manager-main/WEB-INF/lib/crowding-manager-impl-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/target/crowding-manager-main/WEB-INF/lib/crowding-manager-impl-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/target/crowding-manager-main/WEB-INF/lib/crowding-potal-impl-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/target/crowding-manager-main/WEB-INF/lib/crowding-potal-impl-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/target/crowding-manager-main/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/target/crowding-manager-main/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-potal-api/target/crowding-potal-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-potal-api/target/crowding-potal-api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-potal-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-potal-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-potal-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-potal-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-potal-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-potal-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-potal-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-potal-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-potal-api/target/surefire-reports/TEST-cn.lyy.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-potal-api/target/surefire-reports/TEST-cn.lyy.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-potal-api/target/surefire-reports/cn.lyy.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-potal-api/target/surefire-reports/cn.lyy.AppTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-potal-impl/target/crowding-potal-impl-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-potal-impl/target/crowding-potal-impl-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-potal-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-potal-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-potal-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-potal-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-potal-impl/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-potal-impl/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-potal-impl/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-potal-impl/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-potal-impl/target/surefire-reports/TEST-cn.lyy.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-potal-impl/target/surefire-reports/TEST-cn.lyy.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager/crowding-potal-impl/target/surefire-reports/cn.lyy.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager/crowding-potal-impl/target/surefire-reports/cn.lyy.AppTest.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/crowdfunding-parent/target/" />
     <ignored path="$PROJECT_DIR$/crowding-manager/target/" />
@@ -94,57 +183,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-impl/src/main/java/cn/lyy/crowdfunding/manager/controller/TestController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-api/src/main/java/cn/lyy/crowdfunding/manager/service/TestService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-impl/src/main/java/cn/lyy/crowdfunding/manager/service/impl/TestServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+            <state relative-caret-position="209">
+              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/java/cn/lyy/crowdfunding/listener/StartSystemListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-api/src/main/java/cn/lyy/crowdfunding/manager/dao/TestDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/mybatis/mybatis-config.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/config/jdbc.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -152,37 +206,49 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/spring/spring-context.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+            <state relative-caret-position="-798" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1048">
+              <caret line="31" selection-start-line="28" selection-start-column="2" selection-end-line="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-impl/src/main/resources/mybatis/mapper-user.xml">
+        <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/bootstrap/js/npm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="228">
+              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-api/pom.xml">
+        <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/WEB-INF/jsp/error/error.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="76">
+              <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-potal-impl/pom.xml">
+        <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-impl/src/main/java/cn/lyy/crowdfunding/manager/controller/TestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            <state relative-caret-position="133">
+              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/spring/springmvc-context.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -193,8 +259,8 @@
         <option value="package-info" />
         <option value="Jsp File" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="spring-beans.schema" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -219,6 +285,9 @@
       <find>cn.lyy.crowdfunding.manager.service</find>
       <find>crowdfunding.t_student</find>
     </findStrings>
+    <dirStrings>
+      <dir>D:\web\crowdfunding\crowding-manager\crowding-manager-main\src\main\resources</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -227,7 +296,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/mybatis/mybatis-config.xml" />
-        <option value="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/WEB-INF/jsp/error/error.jsp" />
         <option value="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/index.jsp" />
         <option value="$MAVEN_REPOSITORY$/cn/lyy/crowdfunding-common/1.0-SNAPSHOT/crowdfunding-common-1.0-SNAPSHOT.pom" />
         <option value="$PROJECT_DIR$/crowding-manager/crowding-potal-api/pom.xml" />
@@ -248,13 +316,15 @@
         <option value="$PROJECT_DIR$/crowding-manager/crowding-manager-api/src/main/java/cn/lyy/crowdfunding/manager/service/TestService.java" />
         <option value="$MAVEN_REPOSITORY$/cn/lyy/crowdfunding-manager-api/1.0-SNAPSHOT/crowdfunding-manager-api-1.0-SNAPSHOT.pom" />
         <option value="$PROJECT_DIR$/crowding-manager/crowding-manager-api/pom.xml" />
-        <option value="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/pom.xml" />
         <option value="$PROJECT_DIR$/crowding-manager/crowding-potal-impl/pom.xml" />
         <option value="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/spring/spring-context.xml" />
         <option value="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/src/main/java/cn/lyy/crowdfunding/manager/controller/TestController.java" />
         <option value="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/src/main/resources/mybatis/mapper-user.xml" />
         <option value="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/src/main/java/cn/lyy/crowdfunding/manager/service/impl/TestServiceImpl.java" />
+        <option value="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/java/cn/lyy/crowdfunding/listener/StartSystemListener.java" />
+        <option value="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/WEB-INF/jsp/error/error.jsp" />
       </list>
     </option>
   </component>
@@ -293,6 +363,28 @@
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="crowding-manager" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="crowding-manager-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="crowding-manager-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="crowding-manager-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="crowding-manager-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="crowding-manager-impl" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
@@ -308,8 +400,8 @@
     <option name="jreName" value="1.8" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="392" />
-    <option name="y" value="64" />
+    <option name="x" value="181" />
+    <option name="y" value="68" />
     <option name="width" value="1667" />
     <option name="height" value="1000" />
   </component>
@@ -331,73 +423,6 @@
             <path>
               <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
               <item name="crowding-manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowding-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="crowding-manager-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowding-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="crowding-manager-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowding-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="crowding-manager-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowding-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="crowding-manager-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowding-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="crowding-manager-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lyy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowding-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="crowding-manager-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lyy" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowding-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="crowding-manager-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lyy" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowding-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="crowding-manager-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lyy" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
@@ -458,34 +483,6 @@
             <path>
               <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
               <item name="crowding-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="crowding-manager-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lyy" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowding-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="crowding-manager-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowding-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="crowding-manager-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowding-manager" type="462c0819:PsiDirectoryNode" />
               <item name="crowding-manager-main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -516,7 +513,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="crowdfunding" type="462c0819:PsiDirectoryNode" />
+              <item name="listener" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
@@ -525,24 +522,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowding-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="crowding-manager-main" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowding-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="crowding-manager-main" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
@@ -594,7 +573,26 @@
             <path>
               <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
               <item name="crowding-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="crowding-potal-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="crowding-manager-main" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crowding-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="crowding-manager-main" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="crowding-manager-main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crowding-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crowdfunding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crowding-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -607,18 +605,19 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555339702915" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555409087126" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="F:/javaee/guigu/04-众筹网项目视频课件/20170923-Atcrowdfunding/代码" />
+    <property name="last_opened_file_path" value="F:/javaee/guigu/04-众筹网项目视频课件/20170920-Atcrowdfunding/代码" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3678161" />
-    <property name="settings.editor.selected.configurable" value="spring.boot" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\web\crowdfunding\crowding-manager\crowding-manager-main\src\main\webapp" />
       <recent name="D:\web\crowdfunding\crowding-manager\crowding-manager-impl\src\main\resources\mybatis" />
       <recent name="D:\web\crowdfunding\crowding-manager\crowding-potal-impl\src\main\resources\mybatis" />
       <recent name="D:\web\crowdfunding\crowding-manager\crowding-potal-impl\src\main" />
@@ -638,6 +637,53 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.39">
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="crowd-common" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="crowd-common" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="crowding-manager" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -662,13 +708,14 @@
       <method v="2" />
     </configuration>
     <configuration name="Tomcat 8.5.39" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.39" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/crowding/" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="crowding-manager-main:war exploded">
+        <artifact name="crowding">
           <settings>
-            <option name="CONTEXT_PATH" value="/crowding_manager_main_war_exploded" />
+            <option name="CONTEXT_PATH" value="/crowding" />
           </settings>
         </artifact>
       </deployment>
@@ -731,7 +778,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="crowding-manager-main:war exploded" />
+          <artifact name="crowding" />
         </option>
       </method>
     </configuration>
@@ -833,12 +880,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39315000" />
+    <option name="totallyTimeSpent" value="44616000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18710022" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18710022" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -848,16 +896,16 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.79402614" visible="true" weight="0.32794458" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49968886" weight="0.3995381" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7926439" visible="true" weight="0.3275488" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49968886" weight="0.32794458" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.20597386" side_tool="true" visible="true" weight="0.30802602" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.39587852" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.20735608" side_tool="true" visible="true" weight="0.3275488" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49946696" weight="0.39587852" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
@@ -887,18 +935,6 @@
     <MESSAGE value="配置web.xml" />
     <option name="LAST_COMMIT_MESSAGE" value="配置web.xml" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/crowding-manager/crowding-manager-impl/src/main/java/cn/lyy/crowdfunding/manager/controller/TestController.java</url>
-          <line>14</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
@@ -906,9 +942,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/crowdfunding-common/crowdfunding-common.iml" />
     <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-bean/src/main/java/package-info.java" />
-    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/log4j.properties" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.0.0.RELEASE/spring-webmvc-4.0.0.RELEASE.jar!/org/springframework/web/servlet/mvc/annotation/AnnotationMethodHandlerAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1425">
@@ -916,16 +950,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-potal-impl/src/main/resources/mybatis/mapper-user.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/WEB-INF/jsp/error/error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-potal-impl/src/main/resources/mybatis/mapper-user.xml" />
     <entry file="file://$MAVEN_REPOSITORY$/cn/lyy/crowdfunding-common/1.0-SNAPSHOT/crowdfunding-common-1.0-SNAPSHOT.pom">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1767">
@@ -933,26 +958,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/java/cn/lyy/crowdfunding/aa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-api/crowding-manager-api.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-potal-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager.iml" />
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/java/cn/lyy/crowdfunding/aa.java" />
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-api/crowding-manager-api.iml" />
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-potal-api/pom.xml" />
     <entry file="file://$PROJECT_DIR$/crowdfunding-parent/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -962,33 +971,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crowdfunding-common/pom.xml" />
     <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-api/src/main/java/cn/lyy/crowdfunding/manager/dao/TestApi.java" />
-    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-bean/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-bean/pom.xml" />
     <entry file="file://$PROJECT_DIR$/crowding-manager/crowdfunding-common/crowdfunding-commonte.iml" />
     <entry file="file://$PROJECT_DIR$/crowding-manager/crowdfunding-common/pom.xml" />
     <entry file="file://$PROJECT_DIR$/crowding-manager/crowdfunding-commona/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/crowding-manager/crowd-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="94" column="37" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowd-common/pom.xml" />
     <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-impl/src/main/java/cn/lyy/crowdfunding/manager/service/impl/UserService.java" />
-    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-api/target/classes/cn/lyy/crowdfunding/manager/dao/TestDao.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#227#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-api/target/classes/cn/lyy/crowdfunding/manager/dao/TestDao.class" />
     <entry file="file://$MAVEN_REPOSITORY$/cn/lyy/crowdfunding-manager-api/1.0-SNAPSHOT/crowdfunding-manager-api-1.0-SNAPSHOT.pom">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -996,117 +985,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crowding-manager/pom.xml">
+    <entry file="file://$PROJECT_DIR$/crowding-manager/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/index.jsp" />
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-impl/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-api/src/main/java/cn/lyy/crowdfunding/manager/service/TestService.java" />
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-api/src/main/java/cn/lyy/crowdfunding/manager/dao/TestDao.java" />
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/mybatis/mybatis-config.xml" />
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/config/jdbc.properties" />
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-impl/src/main/resources/mybatis/mapper-user.xml" />
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-api/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-potal-impl/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-impl/src/main/java/cn/lyy/crowdfunding/manager/service/impl/TestServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+        <state relative-caret-position="209">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/java/cn/lyy/crowdfunding/listener/StartSystemListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/bootstrap/js/npm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/spring/springmvc-context.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/spring/spring-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-798" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-impl/src/main/java/cn/lyy/crowdfunding/manager/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/WEB-INF/jsp/error/error.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="73" column="51" selection-start-line="73" selection-start-column="51" selection-end-line="73" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/spring/springmvc-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-impl/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-impl/src/main/java/cn/lyy/crowdfunding/manager/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-api/src/main/java/cn/lyy/crowdfunding/manager/service/TestService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-api/src/main/java/cn/lyy/crowdfunding/manager/dao/TestDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/mybatis/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/config/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/src/main/resources/spring/spring-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-impl/src/main/resources/mybatis/mapper-user.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-potal-impl/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowding-manager/crowding-manager-impl/src/main/java/cn/lyy/crowdfunding/manager/service/impl/TestServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1048">
+          <caret line="31" selection-start-line="28" selection-start-column="2" selection-end-line="31" />
         </state>
       </provider>
     </entry>
@@ -1116,7 +1055,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>crowding-manager-main:war</last-edited>
+          <last-edited>crowding</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1164,7 +1103,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>crowding-manager-impl</last-edited>
+          <last-edited>Spring|crowding-manager-main</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
