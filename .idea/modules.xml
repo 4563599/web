@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/crowding-manager/crowd-common/crowd-common.iml" filepath="$PROJECT_DIR$/crowding-manager/crowd-common/crowd-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/crowding-manager/crowdfunding-common/crowdfunding-commonte.iml" filepath="$PROJECT_DIR$/crowding-manager/crowdfunding-common/crowdfunding-commonte.iml" />
-      <module fileurl="file://$PROJECT_DIR$/crowdfunding-parent/crowdfunding-parent.iml" filepath="$PROJECT_DIR$/crowdfunding-parent/crowdfunding-parent.iml" />
-      <module fileurl="file://$PROJECT_DIR$/crowding-manager/crowding-manager.iml" filepath="$PROJECT_DIR$/crowding-manager/crowding-manager.iml" />
-      <module fileurl="file://$PROJECT_DIR$/crowding-manager/crowding-manager-api/crowding-manager-api.iml" filepath="$PROJECT_DIR$/crowding-manager/crowding-manager-api/crowding-manager-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/crowding-manager/crowding-manager-bean/crowding-manager-bean.iml" filepath="$PROJECT_DIR$/crowding-manager/crowding-manager-bean/crowding-manager-bean.iml" />
-      <module fileurl="file://$PROJECT_DIR$/crowding-manager/crowding-manager-impl/crowding-manager-impl.iml" filepath="$PROJECT_DIR$/crowding-manager/crowding-manager-impl/crowding-manager-impl.iml" />
-      <module fileurl="file://$PROJECT_DIR$/crowding-manager/crowding-manager-main/crowding-manager-main.iml" filepath="$PROJECT_DIR$/crowding-manager/crowding-manager-main/crowding-manager-main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/crowding-manager/crowding-potal-api/crowding-potal-api.iml" filepath="$PROJECT_DIR$/crowding-manager/crowding-potal-api/crowding-potal-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/crowding-manager/crowding-potal-impl/crowding-potal-impl.iml" filepath="$PROJECT_DIR$/crowding-manager/crowding-potal-impl/crowding-potal-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/crowdfunding.iml" filepath="$PROJECT_DIR$/.idea/crowdfunding.iml" />
     </modules>
   </component>
 </project>

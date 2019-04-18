@@ -13,6 +13,7 @@ public class TestController {
     @RequestMapping("/test")
     public String test(String name){
         testService.insert();
-        return "error";
+        System.out.println("/test");
+        return "success";
     }
 }

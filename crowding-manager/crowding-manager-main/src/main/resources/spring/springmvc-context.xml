@@ -15,10 +15,10 @@
 
     <!-- 启用注解功能 -->
     <context:annotation-config />
-    
-    <!-- <mvc:annotation-driven /> -->
-    <!-- <mvc:default-servlet-handler /> -->
-    
+    <!---->
+     <!--<mvc:annotation-driven />-->
+     <!--<mvc:default-servlet-handler />-->
+    <!---->
     
     <!-- 字符串字符编码转换 -->
     <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" >
