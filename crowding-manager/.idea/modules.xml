@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/crowding-manager-main/crowding-manager-main.iml" filepath="$PROJECT_DIR$/crowding-manager-main/crowding-manager-main.iml" />
       <module fileurl="file://$PROJECT_DIR$/crowding-potal-api/crowding-potal-api.iml" filepath="$PROJECT_DIR$/crowding-potal-api/crowding-potal-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/crowding-potal-impl/crowding-potal-impl.iml" filepath="$PROJECT_DIR$/crowding-potal-impl/crowding-potal-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
     </modules>
   </component>
 </project>

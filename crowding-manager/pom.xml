@@ -33,6 +33,7 @@
         <module>crowding-potal-api</module>
         <module>crowding-manager-main</module>
         <module>crowd-common</module>
+        <module>web</module>
     </modules>
 
 
