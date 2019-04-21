@@ -26,9 +26,9 @@
     </listener>
 
 
-    <!--<listener>-->
-        <!--<listener-class>cn.lyy.crowdfunding.listener.StartSystemListener</listener-class>-->
-    <!--</listener>-->
+    <listener>
+        <listener-class>cn.lyy.crowdfunding.listener.StartSystemListener</listener-class>
+    </listener>
 
     <!-- 字符编码过滤器 :
         只负责解决POST请求乱码问题.

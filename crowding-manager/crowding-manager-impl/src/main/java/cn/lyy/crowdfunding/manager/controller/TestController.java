@@ -11,9 +11,10 @@ public class TestController {
     private TestService testService;
 
     @RequestMapping("/test")
-    public String test(String name){
+    public String test(String name) {
         testService.insert();
         System.out.println("/test");
         return "success";
     }
+
 }
