@@ -63,14 +63,22 @@
 </div>
 <script src="${APP_PATH }/jquery/jquery-2.1.1.min.js"></script>
 <script src="${APP_PATH }/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="${APP_PATH}/jquery/layer/layer.js"></script>
 <script>
     function dologin() {
         var floginacct = $("#floginacct");
         var fuserpswd = $("#fuserpswd");
         var ftype = $("#ftype");
-        alert(floginacct.val());
-        alert(fuserpswd.val());
-        alert(ftype.val());
+
+        if ($.trim(floginacct.val()) == "") {
+            layer.msg("帐号密码不能为空,请重新输入", {time:1000, icon:5, shift:6}, function(){
+                floginacct.val("");
+                floginacct.focus();
+            });
+            return false;
+        }
+        var loadingIndex = -1;
+
         $.ajax({
             type: "POST",
             url: "${APP_PATH}/doLogin.do",
@@ -81,18 +89,20 @@
             },
             beforeSend: function () {
                 //一般做表单数据功能
+                loadingIndex= layer.msg("处理中", {icon:16});
                 return true;
             },
             success: function (result) {
                 // alert("ok" + floginacct.val() + "ok" + fuserpswd.val() + "ok" + ftype.val());
-                if(result.success){
-                    alert("ok");
-                }else {
-                    alert("not ok")
+                layer.close(loadingIndex);
+                if (result.success) {
+                    window.location.href="${APP_PATH}/main.htm";
+                } else {
+                    layer.msg(result.message, {time:1000, icon:5, shift:6})
                 }
             },
             error: function (result) {
-                alert("error");
+                layer.msg("登录失败", {time:1000, icon:5, shift:6});
             }
         });
 

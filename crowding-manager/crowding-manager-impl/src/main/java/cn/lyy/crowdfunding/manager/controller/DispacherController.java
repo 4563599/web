@@ -4,6 +4,7 @@ import cn.lyy.crowdfunding.bean.User;
 import cn.lyy.crowdfunding.manager.service.UserService;
 import cn.lyy.utils.AjaxResult;
 import cn.lyy.utils.Const;
+import cn.lyy.utils.MD5Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -45,7 +46,7 @@ public class DispacherController {
         try {
             Map<String, Object> paramMap = new HashMap<String, Object>();
             paramMap.put("loginacct", loginacct);
-            paramMap.put("userpswd", userpswd);
+            paramMap.put("userpswd", MD5Util.digest(userpswd));
             paramMap.put("type", type);
             User user = userService.login(paramMap);
             httpSession.setAttribute(Const.LOGIN_USER, user);
@@ -56,6 +57,12 @@ public class DispacherController {
             result.setSuccess(false);
         }
         return result;
+    }
+
+    @RequestMapping("/logout")
+    public String logout(HttpSession httpSession) {
+        httpSession.invalidate();
+        return "redirect:/index.htm";
     }
 
     //同步请求
