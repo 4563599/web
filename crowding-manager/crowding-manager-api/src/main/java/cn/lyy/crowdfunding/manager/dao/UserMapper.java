@@ -1,6 +1,7 @@
 package cn.lyy.crowdfunding.manager.dao;
 
 import cn.lyy.crowdfunding.bean.User;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 import java.util.Map;
@@ -17,4 +18,9 @@ public interface UserMapper {
     int updateByPrimaryKey(User record);
 
 	User queryUserlogin(Map<String, Object> paramMap);
+
+    List<User> queryList(@Param("startIndex")Integer startIndex,@Param("pagesize") Integer pagesize);
+
+    Integer queryCount();
+
 }
