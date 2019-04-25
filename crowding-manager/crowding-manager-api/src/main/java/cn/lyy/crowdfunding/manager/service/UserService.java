@@ -11,4 +11,5 @@ public interface UserService {
 
     Page queryUserByPage(Integer pageno, Integer pagesize);
 
+    int saveUser(User user);
 }

@@ -38,4 +38,9 @@ public class UserServiceImpl implements UserService {
         page.setTotalsize(totalSize);
         return page;
     }
+
+    @Override
+    public int saveUser(User user) {
+        return userMapper.insert(user);
+    }
 }
