@@ -171,36 +171,58 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <%--<c:forEach items="${page.datas}" var="user" varStatus="status">--%>
-                            <%--<tr>--%>
-                            <%--<td>${status.count}</td>--%>
-                            <%--<td><input type="checkbox"></td>--%>
-                            <%--<td>${user.loginacct}</td>--%>
-                            <%--<td>${user.username}</td>--%>
-                            <%--<td>${user.email}</td>--%>
-                            <%--<td>--%>
-                            <%--<button type="button" class="btn btn-success btn-xs"><i--%>
-                            <%--class=" glyphicon glyphicon-check"></i></button>--%>
-                            <%--<button type="button" class="btn btn-primary btn-xs"><i--%>
-                            <%--class=" glyphicon glyphicon-pencil"></i></button>--%>
-                            <%--<button type="button" class="btn btn-danger btn-xs"><i--%>
-                            <%--class=" glyphicon glyphicon-remove"></i></button>--%>
-                            <%--</td>--%>
-                            <%--</tr>--%>
-                            <%--</c:forEach>--%>
+                            <c:forEach items="${page.datas}" var="user" varStatus="status">
+                                <tr>
+                                    <td>${status.count}</td>
+                                    <td><input type="checkbox"></td>
+                                    <td>${user.loginacct}</td>
+                                    <td>${user.username}</td>
+                                    <td>${user.email}</td>
+                                    <td>
+                                        <button type="button" class="btn btn-success btn-xs"><i
+                                                class=" glyphicon glyphicon-check"></i></button>
+                                        <button type="button" class="btn btn-primary btn-xs"><i
+                                                class=" glyphicon glyphicon-pencil"></i></button>
+                                        <button type="button" class="btn btn-danger btn-xs"><i
+                                                class=" glyphicon glyphicon-remove"></i></button>
+                                    </td>
+                                </tr>
+                            </c:forEach>
 
                             </tbody>
                             <tfoot>
-                            <tfoot>
-                            <tr >
+                            <tr>
                                 <td colspan="6" align="center">
                                     <ul class="pagination">
+                                        <c:if test="${page.pageno==1}">
+                                            <li class="disabled"><a href="#">上一页</a></li>
+                                        </c:if>
+                                        <c:if test="${page.pageno!=1}">
+                                            <li><a href="#" onclick="pageChange(${page.pageno-1})">上一页></a></li>
+                                        </c:if>
+                                        <%--<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>--%>
+                                        <%--<li><a href="#">2</a></li>--%>
+                                        <%--<li><a href="#">3</a></li>--%>
+                                        <%--<li><a href="#">4</a></li>--%>
+                                        <%--<li><a href="#">5</a></li>--%>
 
+                                        <c:forEach begin="1" end="${page.totalno }" var="num">
+                                            <li
+                                                    <c:if test="${page.pageno==num}">
+                                                        class="active"
+                                                    </c:if>
+                                            ><a href="#" onclick="pageChange(${num})">${num}</a></li>
+                                        </c:forEach>
+
+                                        <c:if test="${page.pageno==page.totalno}">
+                                            <li class="disabled"><a href="#">下一页</a></li>
+                                        </c:if>
+                                        <c:if test="${page.pageno!=page.totalno}">
+                                            <li><a href="#" onclick="pageChange(${page.pageno+1})">下一页></a></li>
+                                        </c:if>
                                     </ul>
                                 </td>
                             </tr>
-
-                            </tfoot>
 
                             </tfoot>
                         </table>
@@ -214,7 +236,6 @@
 <script src="${APP_PATH}/jquery/jquery-2.1.1.min.js"></script>
 <script src="${APP_PATH}/bootstrap/js/bootstrap.min.js"></script>
 <script src="${APP_PATH}/script/docs.min.js"></script>
-<script type="text/javascript" src="${APP_PATH}/jquery/layer/layer.js"></script>
 <script type="text/javascript">
     $(function () {
         $(".list-group-item").click(function () {
@@ -227,7 +248,6 @@
                 }
             }
         });
-        queryPagerUser(1);
     });
     $("tbody .btn-success").click(function () {
         window.location.href = "assignRole.html";
@@ -237,104 +257,7 @@
     });
 
     function pageChange(pageno) {
-        <%--window.location.href = "${APP_PATH}/user/index.do?pageno=" + pageno;--%>
-        queryPagerUser(pageno);
-    }
-
-    var loading_index = -1;
-
-    function queryPagerUser(pageno) {
-        $.ajax({
-            type: "POST",
-            data: {
-                "pageno": pageno,
-                "pagesize": 10
-            },
-            url: "${APP_PATH}/user/index.do",
-            beforeSend: function () {
-                loading_index = layer.load(2, {time: 10 * 1000});
-                return true;
-            },
-            success: function (result) {
-                layer.close(loading_index);
-                if (result.success) {
-                    var page = result.page;
-                    var data = page.datas;
-
-                    var content = '';
-                    $.each(data,function(i,n){
-                        content+='<tr>';
-                        content+='<td>'+(i+1)+'</td>';
-                        content+='<td><input type="checkbox"></td>';
-                        content+='<td>'+n.loginacct+'</td>';
-                        content+='<td>'+n.username+'</td>';
-                        content+='<td>'+n.email+'</td>';
-                        content+='  <td>';
-                        content+='	  <button type="button" class="btn btn-success btn-xs"><i class=" glyphicon glyphicon-check"></i></button>';
-                        content+='	  <button type="button" class="btn btn-primary btn-xs"><i class=" glyphicon glyphicon-pencil"></i></button>';
-                        content+='	  <button type="button" class="btn btn-danger btn-xs"><i class=" glyphicon glyphicon-remove"></i></button>';
-                        content+='  </td>';
-                        content+='</tr> ';
-                    });
-                    $("tbody").html(content);
-
-                    var contentBar = '';
-
-                    if(page.pageno==1 ){
-                        contentBar+='<li class="disabled"><a href="#">上一页</a></li>';
-                    }else{
-                        contentBar+='<li><a href="#" onclick="pageChange('+(page.pageno-1)+')">上一页</a></li>';
-                    }
-
-                    for(var i = 1 ; i<= page.totalno ; i++ ){
-                        contentBar+='<li';
-                        if(page.pageno==i){
-                            contentBar+=' class="active"';
-                        }
-                        contentBar+='><a href="#" onclick="pageChange('+i+')">'+i+'</a></li>';
-                    }
-
-                    if(page.pageno==page.totalno ){
-                        contentBar+='<li class="disabled"><a href="#">下一页</a></li>';
-                    }else{
-                        contentBar+='<li><a href="#" onclick="pageChange('+(page.pageno+1)+')">下一页</a></li>';
-                    }
-
-                    $(".pagination").html(contentBar);
-
-                } else {
-                    layer.msg(result.message, {time: 1000, icon: 5, shift: 6});
-                }
-            },
-            error: function () {
-                layer.msg("加载数据失败！", {time: 1000, icon: 5, shift: 6});
-            }
-        });
-
-        <%--$.ajax({--%>
-        <%--type: "POST",--%>
-        <%--data: {--%>
-        <%--pageno: 1,--%>
-        <%--pagesize: 10--%>
-        <%--},--%>
-        <%--url: "${APP_PATH}/user/index.do",--%>
-        <%--beforeSend: function () {--%>
-        <%--loadingIndex = layer.load(2, {time: 10 * 1000});--%>
-        <%--return true;--%>
-        <%--},--%>
-        <%--success: function (result) {--%>
-        <%--layer.close(loadingIndex);--%>
-        <%--if (result.success) {--%>
-
-
-        <%--} else {--%>
-
-        <%--}--%>
-        <%--},--%>
-        <%--error: function () {--%>
-        <%--layer.msg("加载数据失败!", {time: 1000, icon: 5, shift: 6});--%>
-        <%--}--%>
-        <%--});--%>
+        window.location.href = "${APP_PATH}/user/index.do?pageno=" + pageno;
     }
 </script>
 </body>
