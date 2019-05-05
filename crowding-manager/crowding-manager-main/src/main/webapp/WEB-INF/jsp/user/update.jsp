@@ -149,23 +149,25 @@
                             class="glyphicon glyphicon-question-sign"></i></div>
                 </div>
                 <div class="panel-body">
-                    <form role="form">
+                    <form id="updateForm">
                         <div class="form-group">
-                            <label for="exampleInputPassword1">登陆账号</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" value="${user.loginacct}">
+                            <label for="floginacct">登陆账号</label>
+                            <input type="text" class="form-control" id="floginacct"
+                                   value="${user.loginacct}">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">用户名称</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" value="${user.username}">
+                            <label for="fusername">用户名称</label>
+                            <input type="text" class="form-control" id="fusername" value="${user.username}">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">邮箱地址</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" value="${user.email}">
+                            <label for="femail">邮箱地址</label>
+                            <input type="email" class="form-control" id="femail" value="${user.email}">
                             <p class="help-block label label-warning">请输入合法的邮箱地址, 格式为： xxxx@xxxx.com</p>
                         </div>
-                        <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-edit"></i> 修改
+                        <button id="updateBtn" type="button" class="btn btn-success"><i class="glyphicon glyphicon-edit"></i> 修改
                         </button>
-                        <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-refresh"></i> 重置
+                        <button id="resetBtn" type="button" class="btn btn-danger"><i
+                                class="glyphicon glyphicon-refresh"></i> 重置
                         </button>
                     </form>
                 </div>
@@ -200,9 +202,10 @@
         </div>
     </div>
 </div>
-<script src="jquery/jquery-2.1.1.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="script/docs.min.js"></script>
+<script src="${APP_PATH}/jquery/jquery-2.1.1.min.js"></script>
+<script src="${APP_PATH}/bootstrap/js/bootstrap.min.js"></script>
+<script src="${APP_PATH}/script/docs.min.js"></script>
+<script type="text/javascript" src="${APP_PATH}/jquery/layer/layer.js"></script>
 <script type="text/javascript">
     $(function () {
         $(".list-group-item").click(function () {
@@ -214,6 +217,41 @@
                     $("ul", this).show("fast");
                 }
             }
+        });
+
+        $("#resetBtn").click(function () {
+            $("#updateForm")[0].reset();
+        });
+        
+        
+        $("#updateBtn").click(function () {
+            var loginacct = $("#floginacct").val();
+            var username = $("#fusername").val();
+            var email = $("#femail").val();
+            alert(loginacct);
+            $.ajax({
+                type: "POST",
+                data: {
+                    "loginacct": loginacct,
+                    "username": username,
+                    "email": email,
+                    "id":"${user.id}"
+                },
+                url: "${APP_PATH}/user/doUpdate.do",
+                beforeSend : function() {
+                    return true ;
+                },
+                success : function(result){
+                    if(result.success){
+                        window.location.href="${APP_PATH}/user/toIndex.htm";
+                    }else{
+                        layer.msg("保存用户失败", {time:1000, icon:5, shift:6});
+                    }
+                },
+                error : function(){
+                    layer.msg("保存失败", {time:1000, icon:5, shift:6});
+                }
+            });
         });
     });
 </script>

@@ -32,11 +32,30 @@ public class UserController {
         return "user/add";
     }
 
+
     @RequestMapping("/toUpdate")
     public String toUpdate(Integer id,Map map){
+
         User user = userService.getUserById(id);
-        map.put("user",user);
+        map.put("user", user);
+
         return "user/update";
+    }
+
+    @RequestMapping("/doUpdate")
+    @ResponseBody
+    public Object doUpdate(User user){
+        AjaxResult ajaxResult = new AjaxResult();
+
+        try {
+            int count = userService.updateUserById(user);
+            ajaxResult.setSuccess(count==1);
+        } catch (Exception e) {
+            e.printStackTrace();
+            ajaxResult.setSuccess(false);
+            ajaxResult.setMessage("修改数据失败");
+        }
+        return ajaxResult;
     }
 
     @RequestMapping("/doAdd")

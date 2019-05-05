@@ -17,4 +17,6 @@ public interface UserService {
     Page queryUserByPage(Map<String,Object> paramMap);
 
     User getUserById(Integer id);
+
+    int updateUserById(User id);
 }
