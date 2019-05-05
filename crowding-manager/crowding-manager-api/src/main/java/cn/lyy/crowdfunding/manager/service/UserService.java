@@ -9,7 +9,10 @@ public interface UserService {
 
     User login(Map<String, Object> paramMap);
 
-    Page queryUserByPage(Integer pageno, Integer pagesize);
+//    @Deprecated
+//    Page queryUserByPage(Integer pageno, Integer pagesize);
 
     int saveUser(User user);
+
+    Page queryUserByPage(Map<String,Object> paramMap);
 }

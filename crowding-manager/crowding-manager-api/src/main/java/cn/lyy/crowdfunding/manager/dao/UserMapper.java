@@ -19,8 +19,11 @@ public interface UserMapper {
 
 	User queryUserlogin(Map<String, Object> paramMap);
 
-    List<User> queryList(@Param("startIndex")Integer startIndex,@Param("pagesize") Integer pagesize);
+//    List<User> queryList(@Param("startIndex")Integer startIndex,@Param("pagesize") Integer pagesize);
 
-    Integer queryCount();
+//    Integer queryCount();
 
+    List<User> queryList(Map<String, Object> paramMap);
+
+    Integer queryCount(Map<String, Object> paramMap);
 }
