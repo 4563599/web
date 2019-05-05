@@ -66,4 +66,9 @@ public class UserServiceImpl implements UserService {
         page.setTotalsize(totalSize);
         return page;
     }
+
+    @Override
+    public User getUserById(Integer id) {
+        return userMapper.selectByPrimaryKey(id);
+    }
 }

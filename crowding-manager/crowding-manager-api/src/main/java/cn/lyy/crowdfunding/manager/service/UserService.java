@@ -15,4 +15,6 @@ public interface UserService {
     int saveUser(User user);
 
     Page queryUserByPage(Map<String,Object> paramMap);
+
+    User getUserById(Integer id);
 }

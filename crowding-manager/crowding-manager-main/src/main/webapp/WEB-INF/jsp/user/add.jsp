@@ -137,7 +137,7 @@
                             class="glyphicon glyphicon-question-sign"></i></div>
                 </div>
                 <div class="panel-body">
-                    <form role="form">
+                    <form id="addForm">
                         <div class="form-group">
                             <label for="floginacct">登陆账号</label>
                             <input type="text" class="form-control" id="floginacct" placeholder="请输入登陆账号">
@@ -154,7 +154,7 @@
                         <button id="addBtn" type="button" class="btn btn-success"><i
                                 class="glyphicon glyphicon-plus"></i> 新增
                         </button>
-                        <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-refresh"></i> 重置
+                        <button id="resetBtn" type="button" class="btn btn-danger"><i class="glyphicon glyphicon-refresh"></i> 重置
                         </button>
                     </form>
                 </div>
@@ -233,6 +233,11 @@
                 }
             });
         });
+
+        $("#resetBtn").click(function () {
+            $("#addForm")[0].reset();
+        });
+
     });
 </script>
 </body>

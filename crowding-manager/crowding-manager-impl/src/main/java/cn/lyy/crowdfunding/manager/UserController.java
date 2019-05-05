@@ -32,6 +32,13 @@ public class UserController {
         return "user/add";
     }
 
+    @RequestMapping("/toUpdate")
+    public String toUpdate(Integer id,Map map){
+        User user = userService.getUserById(id);
+        map.put("user",user);
+        return "user/update";
+    }
+
     @RequestMapping("/doAdd")
     @ResponseBody
     public Object doAdd(User user){
