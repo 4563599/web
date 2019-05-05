@@ -4,10 +4,15 @@ import cn.lyy.crowdfunding.bean.User;
 import cn.lyy.crowdfunding.manager.dao.UserMapper;
 import cn.lyy.crowdfunding.manager.service.UserService;
 import cn.lyy.exception.LoginFailException;
+import cn.lyy.utils.Const;
+import cn.lyy.utils.MD5Util;
 import cn.lyy.utils.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import sun.security.provider.MD5;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -41,14 +46,18 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public int saveUser(User user) {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String createTime = simpleDateFormat.format(new Date());
+        user.setCreatetime(createTime);
+        user.setUserpswd(MD5Util.digest(Const.PSSWORD));
         return userMapper.insert(user);
     }
 
     @Override
-    public Page queryUserByPage(Map<String,Object> paramMap) {
-        Page page = new Page((Integer)paramMap.get("pageno"),(Integer)paramMap.get("pagesize"));
+    public Page queryUserByPage(Map<String, Object> paramMap) {
+        Page page = new Page((Integer) paramMap.get("pageno"), (Integer) paramMap.get("pagesize"));
         Integer startIndex = page.getStartIndex();
-        paramMap.put("startIndex",startIndex);
+        paramMap.put("startIndex", startIndex);
         List<User> datas = userMapper.queryList(paramMap);
 
         page.setDatas(datas);

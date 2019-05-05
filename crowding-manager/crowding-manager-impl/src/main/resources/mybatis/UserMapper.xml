@@ -13,7 +13,7 @@
 		delete from t_user
 		where id = #{id,jdbcType=INTEGER}
 	</delete>
-    <insert id="insert" parameterType="cn.lyy.crowdfunding.bean.User">
+    <insert id="insert" parameterType="cn.lyy.crowdfunding.bean.User" useGeneratedKeys="true" keyProperty="id">
 		insert into t_user (id,
 		loginacct, userpswd,
 		username, email, createtime
@@ -72,6 +72,7 @@
             <!--<if test="queryText!=null">loginacct like concat{"%",#{queryText},"%"}</if>-->
 			<if test="queryText!=null">loginacct like concat("%",#{queryText},"%")</if>
         </where>
+		order by createtime desc
         limit #{startIndex},#{pagesize}
     </select>
 

@@ -67,7 +67,7 @@
                                                                                              style="float:right">3</span></span>
                         <ul style="margin-top:10px;display:none;">
                             <li style="height:30px;">
-                                <a href="${APP_PATH }/user/toindex.do"><i
+                                <a href="${APP_PATH }/user/toIndex.do"><i
                                         class="glyphicon glyphicon-user"></i> 用户维护</a>
                             </li>
                             <li style="height:30px;">

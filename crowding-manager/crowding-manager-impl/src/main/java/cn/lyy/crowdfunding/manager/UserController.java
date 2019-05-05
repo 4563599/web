@@ -1,5 +1,6 @@
 package cn.lyy.crowdfunding.manager;
 
+import cn.lyy.crowdfunding.bean.User;
 import cn.lyy.crowdfunding.manager.service.UserService;
 import cn.lyy.utils.AjaxResult;
 import cn.lyy.utils.Page;
@@ -20,6 +21,33 @@ public class UserController {
 
     @Autowired
     UserService userService;
+
+    @RequestMapping("/toIndex")
+    public String toIndex(){
+        return "user/index";
+    }
+
+    @RequestMapping("/toAdd")
+    public String toAdd(){
+        return "user/add";
+    }
+
+    @RequestMapping("/doAdd")
+    @ResponseBody
+    public Object doAdd(User user){
+        AjaxResult ajaxResult = new AjaxResult();
+
+        try {
+            int count = userService.saveUser(user);
+            ajaxResult.setSuccess(count==1);
+        } catch (Exception e) {
+            e.printStackTrace();
+            ajaxResult.setSuccess(false);
+            ajaxResult.setMessage("查询数据失败");
+        }
+        return ajaxResult;
+    }
+
 
     //异步条件查询
     @RequestMapping("/index")
@@ -63,10 +91,6 @@ public class UserController {
 //        return ajaxResult;
 //    }
 
-    @RequestMapping("/toindex")
-    public String toIndex() {
-        return "user/index";
-    }
 
 //同步请求
 //    @RequestMapping("index")
