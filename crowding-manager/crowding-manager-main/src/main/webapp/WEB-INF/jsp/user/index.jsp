@@ -264,7 +264,7 @@
                         content += '  <td>';
                         content += '	  <button type="button" class="btn btn-success btn-xs"><i class=" glyphicon glyphicon-check"></i></button>';
                         content += '	  <button type="button" onclick="window.location.href=\'${APP_PATH}/user/toUpdate.htm?id=' + n.id + '\'" class="btn btn-primary btn-xs"><i class=" glyphicon glyphicon-pencil"></i></button>';
-                        content += '	  <button type="button" class="btn btn-danger btn-xs"><i class=" glyphicon glyphicon-remove"></i></button>';
+                        content += '	  <button type="button" onclick="deleteUser(' + n.id + ',\''+n.loginacct+'\')" class="btn btn-danger btn-xs"><i class=" glyphicon glyphicon-remove"></i></button>';
                         content += '  </td>';
                         content += '</tr> ';
                     });
@@ -308,8 +308,35 @@
             jsonObj.queryText = queryText;
             queryPagerUser(1);
         });
-
     }
+
+    function deleteUser(id,loginacct) {
+        layer.confirm("确认要删除["+loginacct+"]用户吗?",  {icon: 3, title:'提示'}, function(cindex){
+            layer.close(cindex);
+            $.ajax({
+                type : "POST",
+                data : {
+                    "id" : id
+                },
+                url : "${APP_PATH}/user/doDelete.do",
+                beforeSend : function() {
+                    return true ;
+                },
+                success : function(result){
+                    if(result.success){
+                        window.location.href="${APP_PATH}/user/toIndex.htm";
+                    }else{
+                        layer.msg("删除用户失败", {time:1000, icon:5, shift:6});
+                    }
+                },
+                error : function(){
+                    layer.msg("删除失败", {time:1000, icon:5, shift:6});
+                }
+            });
+        }, function(cindex){
+            layer.close(cindex);
+        });
+    };
 </script>
 </body>
 </html>

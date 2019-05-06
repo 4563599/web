@@ -33,6 +33,22 @@ public class UserController {
     }
 
 
+    @RequestMapping("/doDelete")
+    @ResponseBody
+    public Object doDelete(Integer id){
+        AjaxResult ajaxResult = new AjaxResult();
+
+        try {
+            int count = userService.deleteUserById(id);
+            ajaxResult.setSuccess(count==1);
+        } catch (Exception e) {
+            e.printStackTrace();
+            ajaxResult.setSuccess(false);
+            ajaxResult.setMessage("修改数据失败");
+        }
+        return ajaxResult;
+    }
+
     @RequestMapping("/toUpdate")
     public String toUpdate(Integer id,Map map){
 
