@@ -79,6 +79,19 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public int deleteUserById(Integer id) {
-        return  userMapper.deleteByPrimaryKey(id);
+        return userMapper.deleteByPrimaryKey(id);
+    }
+
+    @Override
+    public int deleteUsers(Integer[] ids) {
+        int totalCount = 0;
+        for (Integer i : ids) {
+            int count = userMapper.deleteByPrimaryKey(i);
+            totalCount += count;
+        }
+        if (totalCount != ids.length) {
+            throw new RuntimeException("批量删除失败");
+        }
+        return totalCount;
     }
 }

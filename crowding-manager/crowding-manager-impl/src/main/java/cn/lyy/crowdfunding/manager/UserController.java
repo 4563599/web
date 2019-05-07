@@ -49,6 +49,23 @@ public class UserController {
         return ajaxResult;
     }
 
+    @RequestMapping("/doDeleteBatch")
+    @ResponseBody
+    public Object doDeleteBatch(Integer[] id){
+        AjaxResult ajaxResult = new AjaxResult();
+
+        try {
+            int count = userService.deleteUsers(id);
+            ajaxResult.setSuccess(count==id.length);
+        } catch (Exception e) {
+            e.printStackTrace();
+            ajaxResult.setSuccess(false);
+            ajaxResult.setMessage("修改数据失败");
+        }
+        return ajaxResult;
+    }
+
+
     @RequestMapping("/toUpdate")
     public String toUpdate(Integer id,Map map){
 
