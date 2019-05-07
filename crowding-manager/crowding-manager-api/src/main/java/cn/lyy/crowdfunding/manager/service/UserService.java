@@ -2,6 +2,7 @@ package cn.lyy.crowdfunding.manager.service;
 
 import cn.lyy.crowdfunding.bean.User;
 import cn.lyy.utils.Page;
+import cn.lyy.vo.Data;
 
 import java.util.Map;
 
@@ -23,4 +24,6 @@ public interface UserService {
     int deleteUserById(Integer id);
 
     int deleteUsers(Integer[] ids);
+
+    int deleteUsersByvo(Data data);
 }

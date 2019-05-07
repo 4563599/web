@@ -7,6 +7,7 @@ import cn.lyy.exception.LoginFailException;
 import cn.lyy.utils.Const;
 import cn.lyy.utils.MD5Util;
 import cn.lyy.utils.Page;
+import cn.lyy.vo.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import sun.security.provider.MD5;
@@ -93,5 +94,10 @@ public class UserServiceImpl implements UserService {
             throw new RuntimeException("批量删除失败");
         }
         return totalCount;
+    }
+
+    @Override
+    public int deleteUsersByvo(Data data) {
+        return userMapper.deleteUsersByVO(data.getDatas());
     }
 }

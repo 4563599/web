@@ -258,7 +258,7 @@
                     $.each(data, function (i, n) {
                         content += '<tr>';
                         content += '<td>' + (i + 1) + '</td>';
-                        content += '<td><input id="' + n.id + '" type="checkbox"></td>';
+                        content += '<td><input id="' + n.id + '"  name="'+n.loginacct+'" type="checkbox"></td>';
                         content += '<td>' + n.loginacct + '</td>';
                         content += '<td>' + n.username + '</td>';
                         content += '<td>' + n.email + '</td>';
@@ -342,32 +342,47 @@
 
     $("#allcheckbox").click(function () {
         var allChecked = this.checked;
-        var checkedAll = $("tbody tr td input[type='checkbox']").attr("checked", allChecked);
+        // var checkedAll = $("tbody tr td input[type='checkbox']").prop("checked", allChecked);
 
+        var tbodyCheckedBox = $("tbody tr td input[type='checkbox']");
+
+        $.each(tbodyCheckedBox, function (i, n) {
+            n.checked = allChecked;
+        });
     });
 
     $("#deleteBathBtn").click(function () {
         var selectedBox = $("tbody tr td input:checked");
 
-        var idStr = "";
-
-        if(selectedBox.length==0){
-            layer.msg("至少选择一个用户进行删除!请选择用户!", {time:1000, icon:5, shift:6});
-            return false ;
+        if (selectedBox.length == 0) {
+            layer.msg("至少选择一个用户进行删除!请选择用户!", {time: 1000, icon: 5, shift: 6});
+            return false;
         }
 
-        $.each(selectedBox, function (i, n) {
-            if (i != 0) {
-                idStr += "&";
-            }
-            idStr += "id=" + n.id;
+        // var idStr = "";
+        //
+        // $.each(selectedBox, function (i, n) {
+        //     if (i != 0) {
+        //         idStr += "&";
+        //     }
+        //     idStr += "id=" + n.id;
+        // });
+
+
+        var jsonObj = {};
+
+        $.each(selectedBox,function (i,n) {
+            jsonObj["datas["+i+"].id"]  = n.id;
+            jsonObj["datas["+i+"].loginacct"] = n.name;
+
         });
+
 
         layer.confirm("确认要删除这些用户吗?", {icon: 3, title: '提示'}, function (cindex) {
             layer.close(cindex);
             $.ajax({
                 type: "POST",
-                data: idStr,
+                data: jsonObj,
                 url: "${APP_PATH}/user/doDeleteBatch.do",
                 beforeSend: function () {
                     return true;

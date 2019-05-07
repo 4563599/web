@@ -1,6 +1,7 @@
 package cn.lyy.crowdfunding.manager.dao;
 
 import cn.lyy.crowdfunding.bean.User;
+import cn.lyy.vo.Data;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -26,4 +27,8 @@ public interface UserMapper {
     List<User> queryList(Map<String, Object> paramMap);
 
     Integer queryCount(Map<String, Object> paramMap);
+
+//    int deleteUsersByVO(List<User> data);
+
+    int deleteUsersByVO(@Param("userList") List<User> data);
 }

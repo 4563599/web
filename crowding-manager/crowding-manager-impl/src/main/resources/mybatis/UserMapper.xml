@@ -68,9 +68,9 @@
         username, email, createtime from t_user
         <where>
             <!--<if test="queryText!=null">loginacct like concat{"%",#{queryText},"%"}</if>-->
-			<if test="queryText!=null">loginacct like concat("%",#{queryText},"%")</if>
+            <if test="queryText!=null">loginacct like concat("%",#{queryText},"%")</if>
         </where>
-		order by createtime desc
+        order by createtime desc
         limit #{startIndex},#{pagesize}
     </select>
 
@@ -80,4 +80,16 @@
             <if test="queryText!=null">loginacct like concat("%",#{queryText},"%")</if>
         </where>
     </select>
+
+
+
+    <delete id="deleteUsersByVO" >
+        delete from t_user where id in
+        <foreach collection="userList" open="(" close=")" separator="," item="user">
+            #{user.id}
+        </foreach>
+    </delete>
+
+
+
 </mapper>
