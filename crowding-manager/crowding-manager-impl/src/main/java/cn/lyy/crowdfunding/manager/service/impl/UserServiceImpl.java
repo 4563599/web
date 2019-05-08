@@ -1,5 +1,6 @@
 package cn.lyy.crowdfunding.manager.service.impl;
 
+import cn.lyy.crowdfunding.bean.Role;
 import cn.lyy.crowdfunding.bean.User;
 import cn.lyy.crowdfunding.manager.dao.UserMapper;
 import cn.lyy.crowdfunding.manager.service.UserService;
@@ -99,5 +100,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public int deleteUsersByvo(Data data) {
         return userMapper.deleteUsersByVO(data.getDatas());
+    }
+
+    @Override
+    public List<Role> findAllListRoles() {
+        return userMapper.queryAllRoles();
+    }
+
+    @Override
+    public List<Integer> findALLroleIds(Integer id) {
+        return userMapper.queryRoleById(id);
     }
 }

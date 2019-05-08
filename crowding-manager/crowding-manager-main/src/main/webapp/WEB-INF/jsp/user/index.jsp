@@ -166,9 +166,9 @@
         var contextPath = "${APP_PATH}";
         var pathAddress = path.substring(contextPath.length);
 
-        var alink = $(".list-group a[href*='"+pathAddress+"']");
+        var alink = $(".list-group a[href*='" + pathAddress + "']");
 
-        alink.css("color","red");
+        alink.css("color", "red");
 
         alink.parent().parent().parent().removeClass("tree-closed");
         alink.parent().parent().show();
@@ -220,7 +220,7 @@
                         content += '<td>' + n.username + '</td>';
                         content += '<td>' + n.email + '</td>';
                         content += '  <td>';
-                        content += '	  <button type="button" class="btn btn-success btn-xs"><i class=" glyphicon glyphicon-check"></i></button>';
+                        content += '	  <button type="button" onclick="window.location.href=\'${APP_PATH}/user/assignRole.htm?id=' + n.id +'\'" class="btn btn-success btn-xs"><i class=" glyphicon glyphicon-check"></i></button>';
                         content += '	  <button type="button" onclick="window.location.href=\'${APP_PATH}/user/toUpdate.htm?id=' + n.id + '\'" class="btn btn-primary btn-xs"><i class=" glyphicon glyphicon-pencil"></i></button>';
                         content += '	  <button type="button" onclick="deleteUser(' + n.id + ',\'' + n.loginacct + '\')" class="btn btn-danger btn-xs"><i class=" glyphicon glyphicon-remove"></i></button>';
                         content += '  </td>';

@@ -82,14 +82,20 @@
     </select>
 
 
-
-    <delete id="deleteUsersByVO" >
+    <delete id="deleteUsersByVO">
         delete from t_user where id in
         <foreach collection="userList" open="(" close=")" separator="," item="user">
             #{user.id}
         </foreach>
     </delete>
 
+    <select id="queryAllRoles" resultType="Role">
+        select id,name from t_role ;
+    </select>
+
+    <select id="queryRoleById" parameterType="int" resultType="int">
+        select roleid from t_user_role where userid= #{id}
+    </select>
 
 
 </mapper>

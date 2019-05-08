@@ -1,9 +1,11 @@
 package cn.lyy.crowdfunding.manager.service;
 
+import cn.lyy.crowdfunding.bean.Role;
 import cn.lyy.crowdfunding.bean.User;
 import cn.lyy.utils.Page;
 import cn.lyy.vo.Data;
 
+import java.util.List;
 import java.util.Map;
 
 public interface UserService {
@@ -26,4 +28,8 @@ public interface UserService {
     int deleteUsers(Integer[] ids);
 
     int deleteUsersByvo(Data data);
+
+    List<Role> findAllListRoles();
+
+    List<Integer> findALLroleIds(Integer id);
 }

@@ -1,5 +1,6 @@
 package cn.lyy.crowdfunding.manager.dao;
 
+import cn.lyy.crowdfunding.bean.Role;
 import cn.lyy.crowdfunding.bean.User;
 import cn.lyy.vo.Data;
 import org.apache.ibatis.annotations.Param;
@@ -31,4 +32,8 @@ public interface UserMapper {
 //    int deleteUsersByVO(List<User> data);
 
     int deleteUsersByVO(@Param("userList") List<User> data);
+
+    List<Role> queryAllRoles();
+
+    List<Integer> queryRoleById(Integer id);
 }

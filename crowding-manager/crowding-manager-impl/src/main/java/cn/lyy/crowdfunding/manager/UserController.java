@@ -1,5 +1,6 @@
 package cn.lyy.crowdfunding.manager;
 
+import cn.lyy.crowdfunding.bean.Role;
 import cn.lyy.crowdfunding.bean.User;
 import cn.lyy.crowdfunding.manager.service.UserService;
 import cn.lyy.utils.AjaxResult;
@@ -13,7 +14,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import sun.security.krb5.internal.PAData;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -33,6 +36,28 @@ public class UserController {
         return "user/add";
     }
 
+    @RequestMapping("/assignRole")
+    public String assignRole(Integer id, Map map) {
+        List<Role> allListRoles = userService.findAllListRoles();
+        List<Integer> roleIds = userService.findALLroleIds(id);
+
+        List<Role> leftRoles = new ArrayList<>();
+
+        List<Role> rightRoles = new ArrayList<>();
+
+        for (Role role : allListRoles) {
+            if (roleIds.contains(role.getId())) {
+                rightRoles.add(role);
+            } else {
+                leftRoles.add(role);
+            }
+        }
+
+        map.put("leftRoles", leftRoles);
+        map.put("rightRoles", rightRoles);
+
+        return "user/assignRole";
+    }
 
     @RequestMapping("/doDelete")
     @ResponseBody
