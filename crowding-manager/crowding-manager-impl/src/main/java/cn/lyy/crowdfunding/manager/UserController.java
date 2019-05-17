@@ -36,6 +36,40 @@ public class UserController {
         return "user/add";
     }
 
+    //分配角色
+    @RequestMapping("/doAssignRole")
+    @ResponseBody
+    public Object doAssignRole(Integer userid, Data data) {
+        AjaxResult ajaxResult = new AjaxResult();
+
+        try {
+            int count = userService.saveUserRoleRelationShip(userid,data);
+            ajaxResult.setSuccess(count == 1);
+        } catch (Exception e) {
+            e.printStackTrace();
+            ajaxResult.setSuccess(false);
+            ajaxResult.setMessage("修改数据失败");
+        }
+        return ajaxResult;
+    }
+
+    @ResponseBody
+    @RequestMapping({"/doUnAssignRole"})
+    public Object doUnAssignRole(Integer userid, Data data) {
+        AjaxResult result = new AjaxResult();
+
+        try {
+            this.userService.deleteUserRoleRelationship(userid, data);
+            result.setSuccess(true);
+        } catch (Exception var5) {
+            result.setSuccess(false);
+            var5.printStackTrace();
+            result.setMessage("取消分配角色数据失败!");
+        }
+
+        return result;
+    }
+
     @RequestMapping("/assignRole")
     public String assignRole(Integer id, Map map) {
         List<Role> allListRoles = userService.findAllListRoles();
@@ -203,4 +237,6 @@ public class UserController {
 //        map.put("page", page);
 //        return "user/index";
 //    }
+
+
 }

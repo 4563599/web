@@ -19,7 +19,7 @@ public interface UserMapper {
 
     int updateByPrimaryKey(User record);
 
-	User queryUserlogin(Map<String, Object> paramMap);
+    User queryUserlogin(Map<String, Object> paramMap);
 
 //    List<User> queryList(@Param("startIndex")Integer startIndex,@Param("pagesize") Integer pagesize);
 
@@ -36,4 +36,8 @@ public interface UserMapper {
     List<Role> queryAllRoles();
 
     List<Integer> queryRoleById(Integer id);
+
+    int saveUserRoleRelationShip(@Param("userid") Integer userid, @Param("data") Data data);
+
+    int deleteUserRoleRelationship(@Param("userid") Integer userid,@Param("data")  Data data);
 }

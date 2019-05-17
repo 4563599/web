@@ -131,6 +131,7 @@
 <script src="${APP_PATH}/jquery/jquery-2.1.1.min.js"></script>
 <script src="${APP_PATH}/bootstrap/js/bootstrap.min.js"></script>
 <script src="${APP_PATH}/script/docs.min.js"></script>
+<script type="text/javascript" src="${APP_PATH }/jquery/layer/layer.js"></script>
 <script type="text/javascript">
     $(function () {
         $(".list-group-item").click(function () {
@@ -148,15 +149,75 @@
     $("#leftToRightBtn").click(function () {
         var selectedOptions = $("#leftRoleList option:selected");
 
-        $("#rightRoleList").append(selectedOptions.clone());
-        selectedOptions.remove();
+
+        var jsonObj = {
+            userid: "${param.id}"
+        };
+
+
+        $.each(selectedOptions, function (i, n) {
+            jsonObj["ids[" + i + "]"] = this.value;
+        });
+        var index = -1;
+        $.ajax({
+            type: "POST",
+            data: jsonObj,
+            url: "${APP_PATH}/user/doAssignRole.do",
+            beforeSend: function () {
+                index = layer.msg(2, {time: 10*1000});
+                return true;
+            },
+            success: function (result) {
+                layer.close(index);
+                if (result.success) {
+                    $("#rightRoleList").append(selectedOptions.clone());
+                    selectedOptions.remove();
+                } else {
+                    layer.msg(result.message, {time: 1000, icon: 5, shift: 6});
+                }
+            },
+            error: function () {
+                layer.msg("操作失败!", {time: 1000, icon: 5, shift: 6});
+            }
+        });
     });
 
     $("#rightToLeftBtn").click(function () {
         var selectedOptions = $("#rightRoleList option:selected");
 
-        $("#leftRoleList").append(selectedOptions.clone());
-        selectedOptions.remove();
+
+        var jsonObj = {
+            userid : "${param.id}"
+        };
+
+        $.each(selectedOptions,function(i,n){
+            jsonObj["ids["+i+"]"] = this.value ;
+        });
+
+        var index = -1;
+        $.ajax({
+            type: "POST",
+            data: jsonObj,
+            url: "${APP_PATH}/user/doUnAssignRole.do",
+            beforeSend: function () {
+                index = layer.load(2, {time: 10 * 1000});
+                return true;
+            },
+            success: function (result) {
+                layer.close(index);
+                if (result.success) {
+                    $("#leftRoleList").append(selectedOptions.clone());
+                    selectedOptions.remove();
+                } else {
+                    layer.msg(result.message, {time: 1000, icon: 5, shift: 6});
+                }
+            },
+            error: function () {
+                layer.msg("操作失败!", {time: 1000, icon: 5, shift: 6});
+            }
+
+        });
+
     });
 </script>
 </body>

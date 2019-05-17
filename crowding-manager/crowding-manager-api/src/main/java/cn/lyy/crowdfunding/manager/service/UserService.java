@@ -32,4 +32,8 @@ public interface UserService {
     List<Role> findAllListRoles();
 
     List<Integer> findALLroleIds(Integer id);
+
+    int saveUserRoleRelationShip(Integer userid, Data data);
+
+    int deleteUserRoleRelationship(Integer userid, Data data);
 }

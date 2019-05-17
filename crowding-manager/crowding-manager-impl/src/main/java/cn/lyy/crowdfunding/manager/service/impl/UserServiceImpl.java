@@ -9,6 +9,7 @@ import cn.lyy.utils.Const;
 import cn.lyy.utils.MD5Util;
 import cn.lyy.utils.Page;
 import cn.lyy.vo.Data;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import sun.security.provider.MD5;
@@ -110,5 +111,17 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<Integer> findALLroleIds(Integer id) {
         return userMapper.queryRoleById(id);
+    }
+
+    @Override
+    public int saveUserRoleRelationShip(@Param("userid") Integer userid, @Param("data") Data data) {
+        return userMapper.saveUserRoleRelationShip(userid, data);
+    }
+
+
+
+    @Override
+    public int deleteUserRoleRelationship(Integer userid, Data data) {
+        return userMapper.deleteUserRoleRelationship(userid,data);
     }
 }

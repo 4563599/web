@@ -64,7 +64,7 @@
 			</li>
 			<li style="height:30px;">
 				<a href="${APP_PATH }/advert/index.htm"><i class="glyphicon glyphicon-hdd"></i> 广告管理</a> 
-			</li>
+			</li>a
 			<li style="height:30px;">
 				<a href="message.html"><i class="glyphicon glyphicon-comment"></i> 消息模板</a> 
 			</li>

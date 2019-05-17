@@ -98,4 +98,16 @@
     </select>
 
 
+    <insert id="saveUserRoleRelationShip">
+        <foreach collection="data.ids" item="roleid" separator=";">
+            insert into t_user_role(userid,roleid) values(#{userid},#{roleid})
+        </foreach>
+    </insert>
+
+    <delete id="deleteUserRoleRelationship">
+        delete from t_user_role where userid=#{userid} and roleid in
+        <foreach collection="data.ids" item="roleid" open="(" separator="," close=")">
+            #{roleid}
+        </foreach>
+    </delete>
 </mapper>
