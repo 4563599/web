@@ -1,4 +1,4 @@
-package cn.lyy.crowdfunding.manager;
+package cn.lyy.crowdfunding.manager.controller;
 
 import cn.lyy.crowdfunding.bean.Role;
 import cn.lyy.crowdfunding.bean.User;
